@@ -15,6 +15,7 @@ angular.module('publicApp')
     $scope.error = false;
     $scope.showWelcome = true;
     var modalInstance;
+    /*Method to open the dialog modal*/
     $scope.open = function (size) {
 		  modalInstance= $uibModal.open({
 	      animation: $scope.animationsEnabled,
@@ -29,6 +30,7 @@ angular.module('publicApp')
 	      }
 	    });
 	}
+	/*Updates the controller scope if new book is added*/
 	$scope.$on('book', function(event, book) {
 		$scope.book = book;
 		if(book !== undefined && book!==null){
@@ -39,18 +41,18 @@ angular.module('publicApp')
 			}
 			$scope.books.push(book);
 		}
-	/*	$scope.welcomeMessage = "The book read by you is";
-		$scope.messageContent = "<div>Book:"+$scope.book.name+"</div><div>Title:"+$scope.book.title+"</div><div>Author:"+$scope.book.author+"</div><div>Publication:"+$scope.book.publication+"</div>";*/
 	});
 
 	$scope.closeWelcome = function(){
 		$scope.showWelcome = false;
 	}
-
+	/*
+		Validates the book if duplicate title is added
+	*/
 	$scope.validateDuplicate = function(title){
 		var found = false;
 		for(var i=0;i<$scope.books.length;i++){
-			if($scope.books[i].title === title){
+			if($scope.books[i].title.toUpperCase() === title.toUpperCase()){
 				found = true;
 			}
 		}

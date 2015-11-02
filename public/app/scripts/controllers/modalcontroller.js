@@ -10,6 +10,7 @@
 angular.module('publicApp')
   .controller('Modalcontroller', function ($scope,$uibModalInstance) {
   	$scope.book = {};
+  	/*Emits the book object once user enters the value*/
     $scope.update = function () {
     	$scope.$emit('book', $scope.book);
 		$uibModalInstance.close();
