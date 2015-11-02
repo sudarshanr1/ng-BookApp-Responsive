@@ -3,6 +3,12 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.14.0.
 
+*IMPORTANT*	
+If you are the first time user please follow the below link to install all  dependencies.	
+
+http://yeoman.io/codelab/setup.html
+
+
 ## Build & development
 1.Download this repo as a zip file and extract to your local file system 
 
