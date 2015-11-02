@@ -1,0 +1,275 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  background-color: #eee;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .navItems {
+    padding: 2%;
+  }
+  .navItems li{
+    list-style: none;
+    display: inline;
+    margin-right: 10%;
+    margin-left: 4%;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .welcomeSection,.elPoochSection,.flightSection,.beachSection,.bookSection{
+    padding: 3%;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: #FFFFFF;
+    margin-bottom: 2%;
+  }
+  .welcomeSection h1{
+    color: #FF3366;
+  }
+
+  .messageContent,.elPoochContent,.flightContent,.beachContent,.bookContent {
+    font-size: 18px;
+    border-bottom: 1px solid #eae3c5;
+    padding-bottom: 3%;
+  }
+  .messageAction h3,.elPoochAction h3,.flightAction h3,.beachAction h3,.bookAction h3{
+    display: inline;
+    padding: 2%;
+  }
+  .messageAction,.elPoochAction ,.flightAction,.beachAction,.bookAction{
+    padding-top: 2%;
+  } 
+
+  .elPoochAction h3,.flightAction h3,.beachAction h3,.bookAction h3{
+    font-size: 16px;
+  }
+
+  .imageText {
+    position: absolute;
+    top: 350px;
+    margin-left: 70px;
+  }
+}
+
+.navbar-default{
+  background-color: #FF3366;
+  border-color: #e7e7e7;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+h2{
+  color: #FFFFFF;
+}
+
+.jumbotron{
+  background-color: #eee;
+}
+
+.topNavs{
+  background-color: white;
+}
+
+.elPooch{
+  width: 38%;
+  height: 165px;
+  float: left;
+  margin-right: 2%;
+}
+
+.book{
+  width: 38%;
+  height: 165px;
+  float: left;
+  margin-right: 2%;
+}
+
+.flight{
+  width: 38%;
+  height: 168px;
+  float: left;
+  margin-right: 2%;
+}
+
+.beach{
+  width: 100%;
+  height: 240px;
+  float: left;
+  margin-right: 2%;
+}
+
+.beach img,.flight img,.elPooch img,.book img{
+  width: 100%;
+  height: 100%;
+}
+.elPoochContent,.flightContent,.bookContent {
+  padding-bottom: 17%;
+}
+.leftContent {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.rightContent {
+  float: left;
+  width: 50%;
+}
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clear {
+  clear:both;
+}
+
+.bookFormSection{
+  padding: 5%;
+}
+
+.leftSection,.rightSection {
+  padding-bottom: 10px;
+  width: 40%;
+  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .topNavs{
+    display: none;
+  }
+  .leftContent,.rightContent {
+    width: 100%;
+    clear: both;
+  }
+
+  .imageText {
+    position: relative;
+    top: -100px;
+    margin-left: 28px;
+  }
+  .messageAction h3,.elPoochAction h3,.flightAction h3,.beachAction h3,.bookAction h3 {
+    display: inline;
+  }
+  .welcomeSection,.elPoochSection,.flightSection,.beachSection,.bookSection{
+    padding: 3%;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: #FFFFFF;
+    margin-bottom: 2%;
+  }
+
+  .welcomeSection,.elPoochSection,.flightSection,.bookSection{
+    height: 190px;
+  }
+  .messageContent,.elPoochContent,.flightContent,.beachContent,.bookContent {
+    font-size: 14px;
+    border-bottom: 1px solid #eae3c5;
+    
+  }
+
+  .elPoochAction h3,.flightAction h3,.beachAction h3,.bookAction h3{
+    font-size: 14px;
+  }
+  .iconMenu {
+    background: url(../images/icons/ic_menu_24px.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+  }
+
+  .iconMenu-close {
+    background: url(../images/icons/ic_close_24px.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+  }
+
+  .navItems li {
+    list-style: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+  }
+
+  .navItems {
+    margin-left: -40px;
+  }
+}
+

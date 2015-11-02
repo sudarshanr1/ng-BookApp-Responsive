@@ -1,0 +1,71 @@
+<div ng-if='error' class="alert alert-danger" role="alert">
+  {{errorMessage}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</div>
+<div class="leftContent">
+  <div class="welcomeSection" ng-if="showWelcome">
+    <h1>{{welcomeMessage}}</h1>
+    <div class="messageContent">
+      <span ng-bind-html="messageContent"></span>
+    </div>
+    <div class="messageAction">
+      <h3 ng-click="open(sm)">YES</h3>
+      <h3 ng-click="closeWelcome()">NO</h3>
+    </div>
+  </div>
+  <div ng-repeat="book in books | orderBy:'title'" class="bookSection">
+  <div class="book">
+    <img src="../images/book.jpg"/>
+  </div>
+    <div class="bookContent">
+      {{book.title}} <br><span>by {{book.author}}</span>
+    </div>
+    <div class="bookAction">
+      <h3>FREE SAMPLE</h3>
+      <h3>REVIEW</h3>
+    </div>
+  </div>
+  <div class="elPoochSection">
+    <div class="elPooch">
+      <img src="../images/elpooch.jpg"/>
+    </div>
+    <div class="elPoochContent">
+      ElPooch <br><span>by abc</span>
+    </div>
+    <div class="elPoochAction">
+      <h3>FREE SAMPLE</h3>
+      <h3>REVIEW</h3>
+    </div>
+  </div>
+  <div class="flightSection">
+   <!-- <div class="flight">&nbsp;</div>-->
+    <div class="flight">
+      <img src="../images/flight.jpg"/>
+    </div>
+    <div class="flightContent">
+      Flight <br><span>by abc</span>
+    </div>
+    <div class="flightAction">
+      <h3>FREE SAMPLE</h3>
+      <h3>REVIEW</h3>
+    </div>
+  </div>
+</div>
+<div class="rightContent">
+  <div class="beachSection">
+    <div class="beach">
+      <img src="../images/beaches.jpg"/>
+      <h2 class="imageText">Top 10 beaches of Australia</h2>
+    </div>
+    <div class="beachContent">
+     Number 10
+    </div>
+    <div class="beachAction">
+      <h3>Share</h3>
+      <h3>Explore</h3>
+    </div>
+  </div>
+</div>
+
+

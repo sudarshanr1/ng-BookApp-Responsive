@@ -1,0 +1,30 @@
+<div class="bookFormSection container">
+	<form novalidate class="simple-form">
+	<div class="container">
+		<div class="leftSection">Name:</div>
+		<div class="rightSection">
+			<input type="text" ng-model="book.name" />
+		</div>
+	</div>
+	<div class="container">
+		<div class="leftSection">Title:</div>
+		<div class="rightSection">
+			<input type="text" ng-model="book.title"/>
+		</div>
+	</div>
+	<div class="container">
+		<div class="leftSection">Author:</div>
+		<div class="rightSection">
+			<input type="text" ng-model="book.author"/>
+		</div>
+	</div>
+	<div class="container">
+		<div class="leftSection">Publications:</div>
+		<div class="rightSection">
+			<input type="text" ng-model="book.publication"/>
+		</div>
+	</div>
+	<input type="submit" ng-click="update()" value="Save" />
+	<input type="submit" ng-click="cancel()" value="Cancel" />
+	</form>
+</div>
