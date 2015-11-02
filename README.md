@@ -12,7 +12,8 @@ version 0.14.0.
 
 4.Install bower by command 'bower install' 
 
-5.Install ui-bootstrap as it doesnt come with bower package using command 'bower install angular-bootstrap --save-dev'	
+5.Install ui-bootstrap as it doesnt come with bower package using command	
+ 'bower install angular-bootstrap --save-dev'	
 
 6.Run 'grunt' for building and 'grunt serve' for preview.	
 
